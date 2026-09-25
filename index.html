@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>JARVIS Anime AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<header class="topbar">
+  <div>
+    <div class="eyebrow">J.A.R.V.I.S. // ANIME CORE</div>
+    <h1>Anime AI Assistant</h1>
+  </div>
+  <div class="status"><span></span> ONLINE</div>
+</header>
+
+<main>
+  <section class="core-panel">
+    <div class="core">
+      <div class="ring ring1"></div><div class="ring ring2"></div><div class="ring ring3"></div>
+      <div class="avatar" id="avatar">AI</div>
+      <div class="core-label" id="coreLabel">JARVIS</div>
+    </div>
+    <div class="speech" id="speech">Choose an anime persona, then speak or type a message.</div>
+  </section>
+
+  <section class="controls">
+    <label>Anime Persona</label>
+    <div class="persona-grid" id="personas">
+      <button class="persona active" data-id="jarvis" data-name="JARVIS" data-style="futuristic anime assistant">JARVIS</button>
+      <button class="persona" data-id="pirate" data-name="Pirate Captain" data-style="energetic shonen pirate captain">Pirate</button>
+      <button class="persona" data-id="ninja" data-name="Ninja Shinobi" data-style="calm tactical ninja">Ninja</button>
+      <button class="persona" data-id="hero" data-name="Hero Academy" data-style="optimistic superhero anime student">Hero</button>
+      <button class="persona" data-id="swordsman" data-name="Swordsman" data-style="disciplined anime swordsman">Swordsman</button>
+      <button class="persona" data-id="mage" data-name="Mage" data-style="clever fantasy anime mage">Mage</button>
+    </div>
+
+    <div class="chat" id="chat"></div>
+    <form id="form">
+      <input id="message" autocomplete="off" placeholder="Ask your anime AI anything..." />
+      <button type="button" id="mic" title="Voice input">🎙️</button>
+      <button type="submit" id="send">SEND</button>
+    </form>
+    <div class="hint">Try: “Explain this topic like a ninja” or “Give me a study plan.”</div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
